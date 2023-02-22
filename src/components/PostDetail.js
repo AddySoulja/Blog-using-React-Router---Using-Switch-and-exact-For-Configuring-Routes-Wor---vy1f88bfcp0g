@@ -1,7 +1,8 @@
 import React from 'react';
-
+import {useParams} from 'react-router-dom';
 
 export default function PostDetail({match}) {
-  return <h1>Post Detail: {match.params.id}</h1>;
+  const {id} = useParams();
+  return <h1>Post Detail: {id}</h1>;
 }
   
