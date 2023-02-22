@@ -14,7 +14,9 @@ export default function PostList() {
         <ul>
         {posts.map((item, index) => (
           <Link to={item.path} key={index}>
-            {item.name}
+            <li>
+              {item.name}
+            </li>
           </Link>
         ))}
         </ul>
