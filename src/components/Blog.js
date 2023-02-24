@@ -18,7 +18,9 @@ export default function Blog() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/posts" component={PostList} />
-        <Route path="/posts/:id" component={PostDetail} />
+        <Route path="/posts/:id">
+           <PostList />
+        </Route>
       </Switch>
     </div>
   );
